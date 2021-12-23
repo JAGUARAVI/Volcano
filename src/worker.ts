@@ -340,7 +340,7 @@ class Queue {
 		this.seekTime = amount;
 	}
 
-	public filters(filters: import("./types").PlayerFilterOptions) {
+	public filters(filters?: import("./types").PlayerFilterOptions) {
 		const toApply: Array<string> = [];
 		if (this._filters.includes("-ss")) toApply.push("-ss", this._filters[this._filters.indexOf("-ss") + 2]);
 		this._filters.length = 0;
