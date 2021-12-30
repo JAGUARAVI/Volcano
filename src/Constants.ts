@@ -14,7 +14,7 @@ export const defaultOptions = {
 			sources: {
 				youtube: true,
 				soundcloud: true,
-				http: false,
+				http: true,
 				local: false
 			},
 			bufferDurationMs: 400,
